@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <Header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+            <h1 class="">Weather Dashboard</h1>
+            </div>
+        </nav>
+    </Header>  
+
+    <aside class="float-left">
+        <label for="exampleDataList" class="form-label"><h2>Search for a City:<h2></label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="Chicago">
+        </datalist>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="citySearch()" id="searchbox">Search</button>
+        <br>
+        <ul class = "pervious-cities">
+        </ul>
+    </aside>
+
+    <main class="float-left">
+        <div class="container-fluid py-5" id= "current-city">
+            <h1 class="display-5 fw-bold" id="city"></h1>
+            <p class="col-md-8 fs-4" id="temp"></p>
+            <p class="col-md-8 fs-4" id="wind"></p>
+            <p class="col-md-8 fs-4" id="humidity"></p>
+            <p class="col-md-8 fs-4" id="uv"></p>
+        </div>
+
+        <br>
+        <br>
+
+        <h2>5-Day Forecast:</h2>
+        
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                This is some text within a card body.
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
